@@ -24,10 +24,12 @@
     width: 150px;
 }
 
+
 .movieRow--item img {
     width: 100%;
     transform: scale(0.9); /* deixa a IMAGEM com 90% do tamanho, para fazer o efeito de passar o mouse; */
     transition: all ease 0.2s; /* 200ms */
+    cursor: pointer;
 }
 
 .movieRow--item img:hover{
