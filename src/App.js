@@ -13,7 +13,6 @@ export default () => {
       let list = await Tmdb.getHomeList();
       setMovieList(list);
     }
-
     loadAll();
   }, []);
 

@@ -1,0 +1,36 @@
+.movieRow {
+    margin-bottom: 30px;
+}
+
+.movieRow h2 {
+    margin: 0px 0px 0px 30px;
+}
+
+/* Tudo que passar das laterais, some */
+.movieRow--listarea {
+    overflow-x: hidden;
+    padding-left: 30px;
+}
+
+/* Aumenta a largura da div */
+.movieRow--list {
+    /* deixar dinamico, para cada quantidade vai ter um tamanho */
+    width: 9999999px;
+}
+
+/* Faz um item ficar do lado do outro */
+.movieRow--item {
+    display: inline-block;
+    width: 150px;
+}
+
+.movieRow--item img {
+    width: 100%;
+    transform: scale(0.9); /* deixa a IMAGEM com 90% do tamanho, para fazer o efeito de passar o mouse; */
+    transition: all ease 0.2s; /* 200ms */
+}
+
+.movieRow--item img:hover{
+    /* voltamos a img para o tamanho de 150px dentro da div */
+    transform: scale(1);
+}
