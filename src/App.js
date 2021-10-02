@@ -15,12 +15,11 @@ export default () => {
       let list = await Tmdb.getHomeList();
       setMovieList(list);
 
+      //console.log(list)
+
       //Pegando o filme em destaque
       let originals = list.filter(i=>i.slug === 'originals'); //filtra a lista com os filmes que possuem o slug = originals
-
-      console.log(originals)
-      //Gerar numero aleatorio da lista
-      let randomChosen = Math.floor(Math.random() * (originals[0].items.results.lenght - 1));
+      let randomChosen = Math.floor(Math.random() * (originals[0].items.results.length - 1));
       let chosen = originals[0].items.results[randomChosen];
 
       console.log(chosen)

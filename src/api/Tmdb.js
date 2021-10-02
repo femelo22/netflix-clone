@@ -62,5 +62,13 @@ export default {
                  "items": await baseFetch(`/discover/movie?with_genres=99&language=pt-BR&api_key=${API_KEY}`)
             }
         ]
+    },
+
+    getMovieInfo: async () => {
+
+        
     }
+
+
+
 }

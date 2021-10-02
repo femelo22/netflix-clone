@@ -3,6 +3,7 @@ import './MovieRow.css'
 
 
 export default ({ title, items }) => {
+    //console.log(items)
     return (
         <div className="movieRow">
             <h2>{title}</h2>
